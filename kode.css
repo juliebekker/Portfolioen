@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
 
+
 .item1 {
   grid-area: logo;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .item1 img {
@@ -75,6 +79,8 @@
   text-decoration: underline;
 }
 
+
+/*
 .item4 {
   grid-area: picture;
 
@@ -83,14 +89,14 @@
 .item4 img {
   width: 100%;
 }
+*/
 
 .item5 {
   grid-area: main;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background-color: #fed7dd;
+  /*background-color: #fed7dd; */
   }
+
+
 
 .subitem1boks {
   height: 9.5rem;
@@ -132,6 +138,8 @@
   grid-area: catanimation;
 }
 
+
+/*
 .subitem4boks {
   height: 9.5rem;
   width: 9.5rem;
@@ -165,17 +173,21 @@
 .subitem6 {
   grid-area: ingenide;
 }
+*/
+
 
 .item5 > .subcontainer {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 2fr;
   grid-template-areas:
-  '. video photos .'
-  '. catanimation isometricart .'
-  '. animation ingenide .';
+  '. video photos catanimation .';
+
+  /*
   grid-gap: 3.125rem;
   padding: 1.25rem;
+  */
+
 }
 
 
@@ -462,11 +474,10 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
     'logo header header header'
-    'nav picture picture picture'
-    'main main main main'
+    'nav main main main'
     'footer footer footer footer';
   grid-gap: 0.5rem;
   padding: 0.5rem;
