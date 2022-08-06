@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+.item1 {
+  grid-area: logo;
+}
+
+.item1 img {
+  width: 50%;
+  height: auto;
+}
+
+.item2 {
+  grid-area: header;
+  box-sizing: border-box;
+}
+.item2 > h1 {
+  font-family: Montserrat;
+  font-weight: bold;
+  text-align: left;
+  color: #ffacbb;
+  line-height: 20%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.2rem;
+  margin-left: 1rem;
+  align-items: baseline;
+  font-size: 2rem;
+
+}
+
+.item2 > h2 {
+  font-weight: normal;
+  color: #52648e;
+  font-family: Montserrat;
+  text-align: left;
+  line-height: 20%;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.2rem;
+  margin-left: 1rem;
+  align-items: baseline;
+  font-size: 2rem;
+}
+
+.item3 {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.item3  ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: Courier;
+  text-align: right;
+  flex-direction: column;
+  line-height: 2;
+}
+
+.item3 a {
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  color: #52648e;
+}
+
+.item3 a:hover {
+  background-color: #f6d7c3;
+}
+
+#siden {
+  text-decoration: underline;
+}
+
+.item4 {
+  grid-area: picture;
+
+}
+
+.item4 img {
+  width: 100%;
+}
+
+.item5 {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #fed7dd;
+  }
+
+.subitem1boks {
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('thumbnaillille.jpg');
+
+}
+.subitem1 {
+  grid-area: video;
+
+}
+
+.subitem2boks {
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('lillerulle.jpg') 0 0 no-repeat;
+  animation: subitemsphotos 10s steps(5) infinite;
+
+}
+
+@keyframes subitemsphotos {
+  0% {background-position: 0px;}
+  100% {background-position: -760px;}
+
+}
+
+.subitem2 {
+  grid-area: photos;
+}
+
+.subitem3boks {
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('lillekattenn.jpg') 0 0 no-repeat;
+  animation: catanimation 1s steps(10) infinite;
+}
+
+.subitem3 {
+  grid-area: catanimation;
+}
+
+.subitem4boks {
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('isoartlille.jpg');
+  }
+
+.subitem4 {
+  grid-area: isometricart;
+}
+
+
+.subitem5boks {
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('girlinwindow.jpg');
+
+}
+
+.subitem5 {
+  grid-area: animation;
+}
+
+
+.subitem6boks {
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('POTRÆT152.jpg');
+
+}
+
+.subitem6 {
+  grid-area: ingenide;
+}
+
+.item5 > .subcontainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas:
+  '. video photos .'
+  '. catanimation isometricart .'
+  '. animation ingenide .';
+  grid-gap: 3.125rem;
+  padding: 1.25rem;
+}
+
+
+
+.subitem1b {
+  grid-area: video;
+  }
+
+  .subitem1b video{
+    height: 9.5rem;
+    width: auto;
+  }
+
+.tekst1 {
+  grid-area: videotekst;
+  height: auto;
+  width: auto;
+
+}
+.subitem2b {
+  grid-area: photos;
+  height: 9.5rem;
+  width: 14.25rem;
+  background: url('rullen.jpg');
+  animation: photos 10s steps(5) infinite;
+
+}
+@keyframes photos {
+  0% {background-position: 0px;}
+  100% {background-position: -1140px;}
+
+}
+
+
+.tekst2 {
+  grid-area: photostekst;
+  height: auto;
+  width: auto;
+
+}
+.subitem3b {
+  grid-area: catanimation;
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('lillekattenn.jpg') 0 0 no-repeat;
+  animation: catanimation 1s steps(10) infinite;
+
+}
+@keyframes catanimation {
+  0% {background-position: 0px;}
+  100% {background-position: -1520px;}
+
+}
+
+.tekst3 {
+  grid-area: catanimationtekst;
+  height: auto;
+  width: auto;
+
+}
+.subitem4b {
+  grid-area: isometricart;
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('isoartlille.jpg');
+
+}
+
+.tekst4 {
+  grid-area: isometricarttekst;
+  height: auto;
+  width: auto;
+
+}
+.subitem5b {
+  grid-area: animation;
+}
+
+.subitem5b video{
+  height: 9.5rem;
+  width: auto;
+}
+
+
+.tekst5 {
+  grid-area: animationtekst;
+  height: auto;
+  width: auto;
+
+}
+.subitem6b {
+  grid-area: ingenide;
+  height: 9.5rem;
+  width: 9.5rem;
+  background: url('POTRÆT152.jpg');
+
+}
+
+.tekst6 {
+  grid-area: ingenidetekst;
+  height: auto;
+  width: auto;
+
+}
+
+.item5 > .subcontainerb {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr ;
+  grid-template-rows: 2fr 2fr 1fr 2fr 2fr 1fr 2fr 2fr 1fr 2fr 2fr 1fr 2fr 2fr 1fr 2fr 2fr;
+  grid-template-areas:
+  '. video . .'
+  '. videotekst videotekst .'
+  '. . . .'
+  '. photos . .'
+  '. photostekst photostekst .'
+  '. . . .'
+  '. catanimation . .'
+  '. catanimationtekst catanimationtekst .'
+  '. . . .'
+  '. isometricart . .'
+  '. isometricarttekst isometricarttekst .'
+  '. . . .'
+  '. animation . .'
+  '. animationtekst animationtekst .'
+  '. . . .'
+  '. ingenide . .'
+  '. ingenidetekst ingenidetekst .'
+  ;
+  grid-gap: 1rem;
+  padding: 3rem;
+}
+
+.item5 > .subcontainerb > div {
+  font-family: Montserrat;
+  color: #52648e;
+
+}
+
+.subitem1c {
+  grid-area: personlighedlogo;
+  height: 6.25rem;
+  width: 6.25rem;
+
+}
+.subitem2c {
+  grid-area: personlighed;
+  height: auto;
+  width: auto;
+  line-height: 1.8;
+
+}
+.subitem3c {
+  grid-area: multimediedesignlogo;
+  height: 6.25rem;
+  width: 6.25rem;
+}
+.subitem4c {
+  grid-area: multimediedesign;
+  height: auto;
+  width: auto;
+  line-height: 1.8;
+
+}
+.subitem5c {
+  grid-area: fritidlogo;
+  height: 6.25rem;
+  width: 6.25rem;
+
+
+}
+.subitem6c {
+  grid-area: fritid;
+  height: auto;
+  width: auto;
+  line-height: 1.8;
+
+}
+
+.item5 > .subcontainerc {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2fr 2fr 0.5fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas:
+  '. personlighedlogo personlighed personlighed .'
+  '. multimediedesignlogo multimediedesign multimediedesign .'
+  '. fritidlogo fritid fritid .';
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+.item5 > .subcontainerc > div {
+  font-family: Montserrat;
+  color: #52648e;
+
+}
+
+.subitem1d{
+  grid-area: rubrik;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.subitem2d {
+  grid-area: brødtekst;
+  line-height: 2;
+}
+
+.item5 > .subcontainerd {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  '. rubrik .'
+  '.brødtekst .';
+  grid-gap: 0.5rem;
+  padding: 1rem;
+
+}
+
+
+.item5 > .subcontainerd > div {
+  font-family: Montserrat;
+  color: #52648e;
+  margin-left: 1.5rem;
+}
+
+.item6 {
+  grid-area: footer;
+  background-color: #c8d5f6;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+
+}
+.socials {
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+
+}
+
+.socials > p {
+  font-family: Courier;
+  color: #52648e;
+  text-transform: uppercase;
+  width: auto;
+  height: 0.5rem;
+  margin: auto;
+  padding: 0.5rem;
+
+
+}
+
+.socials > ul {
+  display: flex;
+  width: auto;
+  height: 2rem;
+  margin: auto;
+  padding: 0.5rem;
+
+
+}
+
+.socialicon {
+  list-style: none;
+}
+
+.socialicon a {
+  color: #52648e;
+  font-size: 2rem;
+  padding: 0.5rem 1.3rem;
+
+}
+
+.socialicon a:hover {
+  color: #FFACBB;
+}
+
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    'logo header header header'
+    'nav picture picture picture'
+    'main main main main'
+    'footer footer footer footer';
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 1.3rem 0;
+
+}
+
+@media screen and (min-width: 650px) {
+  html,body {
+    height: 100%;
+  }
+
+  .item3  ul {
+    line-height: 2.5;
+  }
+
+  .item5 > .subcontainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas:
+    '. video photos catanimation .'
+    '. isometricart animation ingenide .';
+    grid-gap: 3.125rem;
+    padding: 1.25rem;
+  }
+
+  .item5 > .subcontainerd {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas:
+    '. rubrik .'
+    '.brødtekst .';
+    grid-gap: 0.5rem;
+    padding: 1rem;
+
+  }
+
+  .item5 > .subcontainerd > div {
+    margin-left: 0rem;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  html,body {
+    height: 100%;
+  }
+
+  .subitem1boks {
+    height: 15rem;
+    width: 15rem;
+    background: url('thumbnailstor.jpg');
+
+  }
+
+  .subitem1 {
+    grid-area: video;
+  }
+
+  .subitem2boks {
+    height: 15rem;
+    width: 15rem;
+    background: url('storrulle.jpg') 0 0 no-repeat;
+    animation: subitemsphotos 10s steps(5) infinite;
+
+  }
+  @keyframes subitemsphotos {
+    0% {background-position: 0px;}
+    100% {background-position: -1200px;}
+
+  }
+
+  .subitem2 {
+    grid-area: photos;
+  }
+
+  .subitem3boks {
+    height: 15rem;
+    width: 15rem;
+    background: url('storkattennforside.jpg') 0 0 no-repeat;
+    animation: catanimation 1s steps(10) infinite;
+  }
+  @keyframes catanimation {
+    0% {background-position: 0px;}
+    100% {background-position: -2400px;}
+
+  }
+  .subitem3 {
+    grid-area: catanimation;
+  }
+
+  .subitem4boks {
+    height: 15rem;
+    width: 15rem;
+    background: url('isoartmellem.jpg');
+
+  }
+
+  .subitem4 {
+    grid-area: isometricart;
+  }
+
+  .subitem5boks {
+    height: 15rem;
+    width: 15rem;
+    background: url('girlinwindow2.jpg');
+
+  }
+
+  .subitem5 {
+    grid-area: animation;
+  }
+
+
+  .subitem6boks {
+    height: 15rem;
+    width: 15rem;
+    background: url('POTRÆT240.jpg');
+
+  }
+
+  .subitem6 {
+    grid-area: ingenide;
+  }
+
+
+  .item5 > .subcontainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas:
+    '. video photos catanimation .'
+    '. isometricart animation ingenide .';
+    grid-gap: 3.125rem;
+    padding: 1.25rem;
+  }
+
+  .subitem1b {
+    grid-area: video;
+  }
+
+  .subitem1b video{
+    height: 25rem;
+    width: auto;
+  }
+
+
+
+.subitem2b {
+  grid-area: photos;
+  height: 25rem;
+  width: 37.5rem;
+  background: url('rullen2.jpg') 0 0 no-repeat;
+  animation: photos 10s steps(5) infinite;
+
+}
+@keyframes photos {
+  0% {background-position: 0px;}
+  100% {background-position: -3000px;}
+
+}
+.subitem3b {
+  grid-area: catanimation;
+  height: 25rem;
+  width: 25rem;
+  background: url('storkattenn.jpg') 0 0 no-repeat;
+  animation: catanimation2 1s steps(10) infinite;
+
+}
+@keyframes catanimation2 {
+  0% {background-position: 0px;}
+  100% {background-position: -4000px;}
+
+}
+.subitem4b {
+  grid-area: isometricart;
+  height: 25rem;
+  width: 25rem;
+  background: url('isoartstor.jpg');
+
+}
+
+.subitem5b {
+  grid-area: animation;
+}
+
+.subitem5b video{
+  height: 25rem;
+  width: auto;
+}
+
+
+.subitem6b {
+  grid-area: ingenide;
+  height: 25rem;
+  width: 25rem;
+  background: url('POTRÆTstor.jpg');
+
+}
+
+.item5 > .subcontainerb {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr ;
+  grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+  grid-template-areas:
+  '. video . .'
+  '. videotekst videotekst .'
+  '. photos . .'
+  '. photostekst photostekst .'
+  '. catanimation . .'
+  '. catanimationtekst catanimationtekst .'
+  '. isometricart . .'
+  '. isometricarttekst isometricarttekst .'
+  '. animation . .'
+  '. animationtekst animationtekst .'
+  '. ingenide . .'
+  '. ingenidetekst ingenidetekst .'
+  ;
+}
+
+}
